@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		986C848122EF9168000D6779 /* ThreeHourForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */; };
+		986C848322EFA5BD000D6779 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848222EFA5BD000D6779 /* CitySearchViewController.swift */; };
 		98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE19E22EF282500D4A067 /* AppDelegate.swift */; };
 		98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A222EF282500D4A067 /* Main.storyboard */; };
 		98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A522EF282600D4A067 /* Assets.xcassets */; };
@@ -21,8 +22,6 @@
 		98ADE1CA22EF293D00D4A067 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1C822EF293D00D4A067 /* Favourite.swift */; };
 		98ADE1CD22EF432B00D4A067 /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1CC22EF432B00D4A067 /* FavouritesTableViewController.swift */; };
 		98ADE1CE22EF432B00D4A067 /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1CC22EF432B00D4A067 /* FavouritesTableViewController.swift */; };
-		98ADE1D022EF434100D4A067 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1CF22EF434100D4A067 /* ResultsTableViewController.swift */; };
-		98ADE1D122EF434100D4A067 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1CF22EF434100D4A067 /* ResultsTableViewController.swift */; };
 		98ADE1D322EF43AC00D4A067 /* ForecastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1D222EF43AC00D4A067 /* ForecastTableViewController.swift */; };
 		98ADE1D422EF43AC00D4A067 /* ForecastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1D222EF43AC00D4A067 /* ForecastTableViewController.swift */; };
 		98ADE1D722EF4BD200D4A067 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1D522EF4BD200D4A067 /* ForecastTableViewCell.swift */; };
@@ -49,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeHourForecastViewModel.swift; sourceTree = "<group>"; };
+		986C848222EFA5BD000D6779 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
 		98ADE19B22EF282500D4A067 /* Windy City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Windy City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98ADE19E22EF282500D4A067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98ADE1A322EF282500D4A067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,6 @@
 		98ADE1C522EF28FD00D4A067 /* WeatherChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherChecker.swift; sourceTree = "<group>"; };
 		98ADE1C822EF293D00D4A067 /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		98ADE1CC22EF432B00D4A067 /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
-		98ADE1CF22EF434100D4A067 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		98ADE1D222EF43AC00D4A067 /* ForecastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewController.swift; sourceTree = "<group>"; };
 		98ADE1D522EF4BD200D4A067 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		98ADE1D622EF4BD200D4A067 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
@@ -155,8 +154,8 @@
 			children = (
 				98ADE19E22EF282500D4A067 /* AppDelegate.swift */,
 				98ADE1CC22EF432B00D4A067 /* FavouritesTableViewController.swift */,
-				98ADE1CF22EF434100D4A067 /* ResultsTableViewController.swift */,
 				98ADE1D222EF43AC00D4A067 /* ForecastTableViewController.swift */,
+				986C848222EFA5BD000D6779 /* CitySearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,7 +285,7 @@
 				98ADE1DC22EF4C5500D4A067 /* ForecastViewModel.swift in Sources */,
 				98ADE1E522EF6EB600D4A067 /* FavouritesManager.swift in Sources */,
 				98ADE1D722EF4BD200D4A067 /* ForecastTableViewCell.swift in Sources */,
-				98ADE1D022EF434100D4A067 /* ResultsTableViewController.swift in Sources */,
+				986C848322EFA5BD000D6779 /* CitySearchViewController.swift in Sources */,
 				986C848122EF9168000D6779 /* ThreeHourForecastViewModel.swift in Sources */,
 				98ADE1D322EF43AC00D4A067 /* ForecastTableViewController.swift in Sources */,
 				98ADE1DF22EF4C8400D4A067 /* Forecast.swift in Sources */,
@@ -305,7 +304,6 @@
 				98ADE1DD22EF4C5500D4A067 /* ForecastViewModel.swift in Sources */,
 				98ADE1E622EF6EB600D4A067 /* FavouritesManager.swift in Sources */,
 				98ADE1D822EF4BD200D4A067 /* ForecastTableViewCell.swift in Sources */,
-				98ADE1D122EF434100D4A067 /* ResultsTableViewController.swift in Sources */,
 				98ADE1D422EF43AC00D4A067 /* ForecastTableViewController.swift in Sources */,
 				98ADE1E022EF4C8400D4A067 /* Forecast.swift in Sources */,
 				98ADE1C422EF28A600D4A067 /* APIRequest.swift in Sources */,

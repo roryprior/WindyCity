@@ -17,15 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
-    let weatherChecker = WeatherChecker.init()
-    weatherChecker.fetchForecast(city: "London,UK") { (forecast, error) in
-      if error != nil {
-        print("\(error)")
-      }
-      if(forecast != nil) {
-        print("\(forecast)")
-      }
-    }
+
     
     return true
   }

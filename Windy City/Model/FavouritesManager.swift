@@ -10,7 +10,7 @@ import Foundation
 
 class FavouritesManager {
   
-  var favorites : Array<Favorite>
+  private var favorites : Array<Favorite>
   
   private class func filePath() -> String {
     
@@ -39,12 +39,25 @@ class FavouritesManager {
     }
   }
   
-  func add(favourite : Favorite) {
-    self.favorites.append(favourite)
+  func swapAt(indexA: Int, indexB : Int) {
+    self.favorites.swapAt(indexA, indexB)
     self.save()
   }
   
-  func removeFavourite(index: Int) {
+  func itemAt(_ index: Int) -> Favorite {
+    return self.favorites[index]
+  }
+  
+  func count() -> Int {
+    return self.favorites.count
+  }
+  
+  func add(_ item : Favorite) {
+    self.favorites.append(item)
+    self.save()
+  }
+  
+  func removeItemAt(_ index: Int) {
     self.favorites.remove(at: index)
     self.save()
   }
