@@ -12,7 +12,7 @@ class APIRequest {
 
   func sendRequest(URL: URL!, params : Dictionary<String,String>!, method: String,completion: @escaping (_ data: Data?, _ error: Error?) -> Void) {
     
-    guard URL != nil else {return}
+    guard URL != nil else { return }
     
     let sessionConfig = URLSessionConfiguration.default
     

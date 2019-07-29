@@ -10,4 +10,12 @@ import Foundation
 
 class ForecastViewModel {
   
+  var forecast : Forecast
+  
+  init(forecast: Forecast) {
+    self.forecast = forecast
+  }
+  
+  
+  
 }
