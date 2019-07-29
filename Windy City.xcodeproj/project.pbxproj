@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE19E22EF282500D4A067 /* AppDelegate.swift */; };
+		98ADE1A122EF282500D4A067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1A022EF282500D4A067 /* ViewController.swift */; };
+		98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A222EF282500D4A067 /* Main.storyboard */; };
+		98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A522EF282600D4A067 /* Assets.xcassets */; };
+		98ADE1A922EF282600D4A067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A722EF282600D4A067 /* LaunchScreen.storyboard */; };
+		98ADE1B422EF282600D4A067 /* Windy_CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1B322EF282600D4A067 /* Windy_CityTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98ADE1B022EF282600D4A067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98ADE19322EF282500D4A067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98ADE19A22EF282500D4A067;
+			remoteInfo = "Windy City";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98ADE19B22EF282500D4A067 /* Windy City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Windy City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98ADE19E22EF282500D4A067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98ADE1A022EF282500D4A067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98ADE1A322EF282500D4A067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98ADE1A522EF282600D4A067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98ADE1A822EF282600D4A067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98ADE1AA22EF282600D4A067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98ADE1AF22EF282600D4A067 /* Windy CityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Windy CityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98ADE1B322EF282600D4A067 /* Windy_CityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windy_CityTests.swift; sourceTree = "<group>"; };
+		98ADE1B522EF282600D4A067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98ADE19822EF282500D4A067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98ADE1AC22EF282600D4A067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98ADE19222EF282500D4A067 = {
+			isa = PBXGroup;
+			children = (
+				98ADE19D22EF282500D4A067 /* Windy City */,
+				98ADE1B222EF282600D4A067 /* Windy CityTests */,
+				98ADE19C22EF282500D4A067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98ADE19C22EF282500D4A067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98ADE19B22EF282500D4A067 /* Windy City.app */,
+				98ADE1AF22EF282600D4A067 /* Windy CityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98ADE19D22EF282500D4A067 /* Windy City */ = {
+			isa = PBXGroup;
+			children = (
+				98ADE19E22EF282500D4A067 /* AppDelegate.swift */,
+				98ADE1A022EF282500D4A067 /* ViewController.swift */,
+				98ADE1A222EF282500D4A067 /* Main.storyboard */,
+				98ADE1A522EF282600D4A067 /* Assets.xcassets */,
+				98ADE1A722EF282600D4A067 /* LaunchScreen.storyboard */,
+				98ADE1AA22EF282600D4A067 /* Info.plist */,
+			);
+			path = "Windy City";
+			sourceTree = "<group>";
+		};
+		98ADE1B222EF282600D4A067 /* Windy CityTests */ = {
+			isa = PBXGroup;
+			children = (
+				98ADE1B322EF282600D4A067 /* Windy_CityTests.swift */,
+				98ADE1B522EF282600D4A067 /* Info.plist */,
+			);
+			path = "Windy CityTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98ADE19A22EF282500D4A067 /* Windy City */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98ADE1B822EF282600D4A067 /* Build configuration list for PBXNativeTarget "Windy City" */;
+			buildPhases = (
+				98ADE19722EF282500D4A067 /* Sources */,
+				98ADE19822EF282500D4A067 /* Frameworks */,
+				98ADE19922EF282500D4A067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Windy City";
+			productName = "Windy City";
+			productReference = 98ADE19B22EF282500D4A067 /* Windy City.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98ADE1AE22EF282600D4A067 /* Windy CityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98ADE1BB22EF282600D4A067 /* Build configuration list for PBXNativeTarget "Windy CityTests" */;
+			buildPhases = (
+				98ADE1AB22EF282600D4A067 /* Sources */,
+				98ADE1AC22EF282600D4A067 /* Frameworks */,
+				98ADE1AD22EF282600D4A067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98ADE1B122EF282600D4A067 /* PBXTargetDependency */,
+			);
+			name = "Windy CityTests";
+			productName = "Windy CityTests";
+			productReference = 98ADE1AF22EF282600D4A067 /* Windy CityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98ADE19322EF282500D4A067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "ThinkMac Software";
+				TargetAttributes = {
+					98ADE19A22EF282500D4A067 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					98ADE1AE22EF282600D4A067 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 98ADE19A22EF282500D4A067;
+					};
+				};
+			};
+			buildConfigurationList = 98ADE19622EF282500D4A067 /* Build configuration list for PBXProject "Windy City" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98ADE19222EF282500D4A067;
+			productRefGroup = 98ADE19C22EF282500D4A067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98ADE19A22EF282500D4A067 /* Windy City */,
+				98ADE1AE22EF282600D4A067 /* Windy CityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98ADE19922EF282500D4A067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98ADE1A922EF282600D4A067 /* LaunchScreen.storyboard in Resources */,
+				98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */,
+				98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98ADE1AD22EF282600D4A067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98ADE19722EF282500D4A067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98ADE1A122EF282500D4A067 /* ViewController.swift in Sources */,
+				98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98ADE1AB22EF282600D4A067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98ADE1B422EF282600D4A067 /* Windy_CityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98ADE1B122EF282600D4A067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98ADE19A22EF282500D4A067 /* Windy City */;
+			targetProxy = 98ADE1B022EF282600D4A067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98ADE1A222EF282500D4A067 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98ADE1A322EF282500D4A067 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98ADE1A722EF282600D4A067 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98ADE1A822EF282600D4A067 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98ADE1B622EF282600D4A067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98ADE1B722EF282600D4A067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98ADE1B922EF282600D4A067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBLM3V4YF;
+				INFOPLIST_FILE = "Windy City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98ADE1BA22EF282600D4A067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBLM3V4YF;
+				INFOPLIST_FILE = "Windy City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98ADE1BC22EF282600D4A067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBLM3V4YF;
+				INFOPLIST_FILE = "Windy CityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-CityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windy City.app/Windy City";
+			};
+			name = Debug;
+		};
+		98ADE1BD22EF282600D4A067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBLM3V4YF;
+				INFOPLIST_FILE = "Windy CityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-CityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windy City.app/Windy City";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98ADE19622EF282500D4A067 /* Build configuration list for PBXProject "Windy City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98ADE1B622EF282600D4A067 /* Debug */,
+				98ADE1B722EF282600D4A067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98ADE1B822EF282600D4A067 /* Build configuration list for PBXNativeTarget "Windy City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98ADE1B922EF282600D4A067 /* Debug */,
+				98ADE1BA22EF282600D4A067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98ADE1BB22EF282600D4A067 /* Build configuration list for PBXNativeTarget "Windy CityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98ADE1BC22EF282600D4A067 /* Debug */,
+				98ADE1BD22EF282600D4A067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98ADE19322EF282500D4A067 /* Project object */;
+}
