@@ -1,0 +1,6 @@
+framework module Pods_Windy_City {
+  umbrella header "Pods-Windy City-umbrella.h"
+
+  export *
+  module * { export * }
+}

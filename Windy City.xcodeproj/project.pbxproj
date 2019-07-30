@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		986C848122EF9168000D6779 /* ThreeHourForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */; };
 		986C848322EFA5BD000D6779 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848222EFA5BD000D6779 /* CitySearchViewController.swift */; };
+		986C848522F03924000D6779 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848422F03924000D6779 /* CompassView.swift */; };
+		986C848822F03FE7000D6779 /* Compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848622F03FE6000D6779 /* Compass@2x.png */; };
+		986C848922F03FE7000D6779 /* Compass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848722F03FE6000D6779 /* Compass@3x.png */; };
+		986C848C22F04264000D6779 /* Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848A22F04264000D6779 /* Arrow@2x.png */; };
+		986C848D22F04264000D6779 /* Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848B22F04264000D6779 /* Arrow@3x.png */; };
 		98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE19E22EF282500D4A067 /* AppDelegate.swift */; };
 		98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A222EF282500D4A067 /* Main.storyboard */; };
 		98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A522EF282600D4A067 /* Assets.xcassets */; };
@@ -34,6 +39,8 @@
 		98ADE1E022EF4C8400D4A067 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1DE22EF4C8400D4A067 /* Forecast.swift */; };
 		98ADE1E522EF6EB600D4A067 /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1E422EF6EB600D4A067 /* FavouritesManager.swift */; };
 		98ADE1E622EF6EB600D4A067 /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1E422EF6EB600D4A067 /* FavouritesManager.swift */; };
+		B2404D43A9E31A1528EEA59C /* Pods_Windy_City.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72FB802CB1ED3684E3F4174 /* Pods_Windy_City.framework */; };
+		C9AD43BD8FCED7D51ED72410 /* Pods_Windy_CityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EBAE259EE2D7E4F6CBCB96 /* Pods_Windy_CityTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01060D2E09A7D6FA8EFCA93E /* Pods-Windy CityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windy CityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windy CityTests/Pods-Windy CityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		198E2DCE4789CE96BEAD5B3A /* Pods-Windy CityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windy CityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Windy CityTests/Pods-Windy CityTests.release.xcconfig"; sourceTree = "<group>"; };
+		525C5FA8806FA002DA563AFC /* Pods-Windy City.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windy City.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windy City/Pods-Windy City.debug.xcconfig"; sourceTree = "<group>"; };
 		986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeHourForecastViewModel.swift; sourceTree = "<group>"; };
 		986C848222EFA5BD000D6779 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
+		986C848422F03924000D6779 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		986C848622F03FE6000D6779 /* Compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compass@2x.png"; sourceTree = "<group>"; };
+		986C848722F03FE6000D6779 /* Compass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compass@3x.png"; sourceTree = "<group>"; };
+		986C848A22F04264000D6779 /* Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@2x.png"; sourceTree = "<group>"; };
+		986C848B22F04264000D6779 /* Arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@3x.png"; sourceTree = "<group>"; };
 		98ADE19B22EF282500D4A067 /* Windy City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Windy City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98ADE19E22EF282500D4A067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98ADE1A322EF282500D4A067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +83,9 @@
 		98ADE1DB22EF4C5500D4A067 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		98ADE1DE22EF4C8400D4A067 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		98ADE1E422EF6EB600D4A067 /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
+		B0EBAE259EE2D7E4F6CBCB96 /* Pods_Windy_CityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Windy_CityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC965C85FEBCC4EB1594741 /* Pods-Windy City.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windy City.release.xcconfig"; path = "Pods/Target Support Files/Pods-Windy City/Pods-Windy City.release.xcconfig"; sourceTree = "<group>"; };
+		F72FB802CB1ED3684E3F4174 /* Pods_Windy_City.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Windy_City.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2404D43A9E31A1528EEA59C /* Pods_Windy_City.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,18 +101,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AD43BD8FCED7D51ED72410 /* Pods_Windy_CityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D66B0D7024BC6D70EA4733A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F72FB802CB1ED3684E3F4174 /* Pods_Windy_City.framework */,
+				B0EBAE259EE2D7E4F6CBCB96 /* Pods_Windy_CityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98ADE19222EF282500D4A067 = {
 			isa = PBXGroup;
 			children = (
 				98ADE19D22EF282500D4A067 /* Windy City */,
 				98ADE1B222EF282600D4A067 /* WindyCityTests */,
 				98ADE19C22EF282500D4A067 /* Products */,
+				E1FAA66C2B350638B16551BD /* Pods */,
+				5D66B0D7024BC6D70EA4733A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +196,7 @@
 			children = (
 				98ADE1D522EF4BD200D4A067 /* ForecastTableViewCell.swift */,
 				98ADE1D622EF4BD200D4A067 /* ForecastTableViewCell.xib */,
+				986C848422F03924000D6779 /* CompassView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,8 +207,23 @@
 				98ADE1A222EF282500D4A067 /* Main.storyboard */,
 				98ADE1A722EF282600D4A067 /* LaunchScreen.storyboard */,
 				98ADE1A522EF282600D4A067 /* Assets.xcassets */,
+				986C848622F03FE6000D6779 /* Compass@2x.png */,
+				986C848722F03FE6000D6779 /* Compass@3x.png */,
+				986C848A22F04264000D6779 /* Arrow@2x.png */,
+				986C848B22F04264000D6779 /* Arrow@3x.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E1FAA66C2B350638B16551BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				525C5FA8806FA002DA563AFC /* Pods-Windy City.debug.xcconfig */,
+				CBC965C85FEBCC4EB1594741 /* Pods-Windy City.release.xcconfig */,
+				01060D2E09A7D6FA8EFCA93E /* Pods-Windy CityTests.debug.xcconfig */,
+				198E2DCE4789CE96BEAD5B3A /* Pods-Windy CityTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98ADE1B822EF282600D4A067 /* Build configuration list for PBXNativeTarget "Windy City" */;
 			buildPhases = (
+				DF55C318EB41AC11E2418E86 /* [CP] Check Pods Manifest.lock */,
 				98ADE19722EF282500D4A067 /* Sources */,
 				98ADE19822EF282500D4A067 /* Frameworks */,
 				98ADE19922EF282500D4A067 /* Resources */,
+				FA93479FCAA78D8C1F349EE2 /* [CP] Embed Pods Frameworks */,
+				14431D6D11FF45CA0C416003 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98ADE1BB22EF282600D4A067 /* Build configuration list for PBXNativeTarget "Windy CityTests" */;
 			buildPhases = (
+				35624A632AD9537334D1C105 /* [CP] Check Pods Manifest.lock */,
 				98ADE1AB22EF282600D4A067 /* Sources */,
 				98ADE1AC22EF282600D4A067 /* Frameworks */,
 				98ADE1AD22EF282600D4A067 /* Resources */,
+				BB4751438A701667D71666D3 /* [CP] Embed Pods Frameworks */,
+				9609C89283FD58F96EB85C54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,8 +315,12 @@
 			files = (
 				98ADE1D922EF4BD200D4A067 /* ForecastTableViewCell.xib in Resources */,
 				98ADE1A922EF282600D4A067 /* LaunchScreen.storyboard in Resources */,
+				986C848C22F04264000D6779 /* Arrow@2x.png in Resources */,
 				98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */,
 				98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */,
+				986C848D22F04264000D6779 /* Arrow@3x.png in Resources */,
+				986C848922F03FE7000D6779 /* Compass@3x.png in Resources */,
+				986C848822F03FE7000D6779 /* Compass@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +333,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14431D6D11FF45CA0C416003 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Windy City/Pods-Windy City-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35624A632AD9537334D1C105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Windy CityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9609C89283FD58F96EB85C54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Windy CityTests/Pods-Windy CityTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4751438A701667D71666D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Windy CityTests/Pods-Windy CityTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF55C318EB41AC11E2418E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Windy City-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA93479FCAA78D8C1F349EE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Windy City/Pods-Windy City-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Windy City/Pods-Windy City-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98ADE19722EF282500D4A067 /* Sources */ = {
@@ -291,6 +450,7 @@
 				98ADE1DF22EF4C8400D4A067 /* Forecast.swift in Sources */,
 				98ADE1C922EF293D00D4A067 /* Favourite.swift in Sources */,
 				98ADE1CD22EF432B00D4A067 /* FavouritesTableViewController.swift in Sources */,
+				986C848522F03924000D6779 /* CompassView.swift in Sources */,
 				98ADE1C622EF28FD00D4A067 /* WeatherChecker.swift in Sources */,
 				98ADE1C322EF28A600D4A067 /* APIRequest.swift in Sources */,
 				98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */,
@@ -462,15 +622,13 @@
 		};
 		98ADE1B922EF282600D4A067 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 525C5FA8806FA002DA563AFC /* Pods-Windy City.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy City/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkmac.WindyCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -480,15 +638,13 @@
 		};
 		98ADE1BA22EF282600D4A067 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC965C85FEBCC4EB1594741 /* Pods-Windy City.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy City/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkmac.WindyCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -498,17 +654,14 @@
 		};
 		98ADE1BC22EF282600D4A067 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01060D2E09A7D6FA8EFCA93E /* Pods-Windy CityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy CityTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-CityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -519,17 +672,14 @@
 		};
 		98ADE1BD22EF282600D4A067 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198E2DCE4789CE96BEAD5B3A /* Pods-Windy CityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy CityTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-CityTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
