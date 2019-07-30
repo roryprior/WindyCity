@@ -16,6 +16,15 @@ class CompassView: UIView {
   
   var degrees = 0.0 {
     didSet {
+      
+      // if a negative number of degrees is supplied we hide the arrow
+      if degrees < 0 {
+        arrowImageView.isHidden = true
+      }
+      else {
+        arrowImageView.isHidden = false
+      }
+      
       let radians = CGFloat(degrees * (.pi / 180))
       arrowImageView.transform = CGAffineTransform(rotationAngle: radians)
     }

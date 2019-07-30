@@ -19,7 +19,9 @@ class FavouritesTableViewController: UITableViewController {
     super.viewDidLoad()
  
     self.title = "Favourite Cities"
-    self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+    self.tableView.rowHeight = 80
+    self.tableView.register(UINib.init(nibName: "FavouriteTableViewCell", bundle: .main), forCellReuseIdentifier: reuseIdentifier)
+    
     self.navigationItem.rightBarButtonItem = self.editButtonItem
     
     addButton = UIBarButtonItem.init(title: "Add City", style: .plain, target: self, action: #selector(addCity(sender:)))
@@ -57,10 +59,10 @@ class FavouritesTableViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! FavouriteTableViewCell
     
     let favourite = favouritesManager.itemAt(indexPath.row)
-    cell.textLabel?.text = favourite.cityName
+    cell.viewModel = FavouriteViewModel.init(favourite: favourite)
     
     return cell
   }

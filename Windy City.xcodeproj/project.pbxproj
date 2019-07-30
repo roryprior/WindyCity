@@ -32,6 +32,9 @@
 		986C84B022F062A9000D6779 /* 13d.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C849E22F062A9000D6779 /* 13d.png */; };
 		986C84B122F062A9000D6779 /* 50d.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C849F22F062A9000D6779 /* 50d.png */; };
 		986C84B222F062A9000D6779 /* 13n.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C84A022F062A9000D6779 /* 13n.png */; };
+		986C84B522F0BAA1000D6779 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */; };
+		986C84B622F0BAA1000D6779 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986C84B422F0BAA1000D6779 /* FavouriteTableViewCell.xib */; };
+		986C84B822F0BD61000D6779 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */; };
 		98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE19E22EF282500D4A067 /* AppDelegate.swift */; };
 		98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A222EF282500D4A067 /* Main.storyboard */; };
 		98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A522EF282600D4A067 /* Assets.xcassets */; };
@@ -100,6 +103,9 @@
 		986C849E22F062A9000D6779 /* 13d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13d.png; sourceTree = "<group>"; };
 		986C849F22F062A9000D6779 /* 50d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50d.png; sourceTree = "<group>"; };
 		986C84A022F062A9000D6779 /* 13n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13n.png; sourceTree = "<group>"; };
+		986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		986C84B422F0BAA1000D6779 /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
 		98ADE19B22EF282500D4A067 /* Windy City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Windy City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98ADE19E22EF282500D4A067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98ADE1A322EF282500D4A067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 			children = (
 				98ADE1DB22EF4C5500D4A067 /* ForecastViewModel.swift */,
 				986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */,
+				986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -258,6 +265,8 @@
 				98ADE1D522EF4BD200D4A067 /* ForecastTableViewCell.swift */,
 				98ADE1D622EF4BD200D4A067 /* ForecastTableViewCell.xib */,
 				986C848422F03924000D6779 /* CompassView.swift */,
+				986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */,
+				986C84B422F0BAA1000D6779 /* FavouriteTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,6 +404,7 @@
 				986C84AE22F062A9000D6779 /* 03d.png in Resources */,
 				986C84B222F062A9000D6779 /* 13n.png in Resources */,
 				986C848D22F04264000D6779 /* Arrow@3x.png in Resources */,
+				986C84B622F0BAA1000D6779 /* FavouriteTableViewCell.xib in Resources */,
 				986C84B022F062A9000D6779 /* 13d.png in Resources */,
 				986C84A322F062A9000D6779 /* 09d.png in Resources */,
 				986C848922F03FE7000D6779 /* Compass@3x.png in Resources */,
@@ -532,6 +542,8 @@
 				98ADE1CD22EF432B00D4A067 /* FavouritesTableViewController.swift in Sources */,
 				986C848522F03924000D6779 /* CompassView.swift in Sources */,
 				98ADE1C622EF28FD00D4A067 /* WeatherChecker.swift in Sources */,
+				986C84B822F0BD61000D6779 /* FavouriteViewModel.swift in Sources */,
+				986C84B522F0BAA1000D6779 /* FavouriteTableViewCell.swift in Sources */,
 				98ADE1C322EF28A600D4A067 /* APIRequest.swift in Sources */,
 				98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */,
 			);
