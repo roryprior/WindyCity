@@ -32,6 +32,7 @@ class WeatherChecker: APIRequest {
       
       // attempt to decode the response we got with the JSON decoder
       let decoder = JSONDecoder.init()
+      
       do {
         let forecast = try decoder.decode(Forecast.self, from: data!)
         completion(forecast, nil)

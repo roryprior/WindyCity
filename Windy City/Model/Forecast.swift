@@ -37,7 +37,7 @@ struct Forecast : Codable {
   }
   
   struct ThreeHourForecast : Codable {
-    var dt: Int64
+    var dt: Double
     var main: Main
     var weather : Array<Weather>
     var wind : Wind

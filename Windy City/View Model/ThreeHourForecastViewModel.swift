@@ -6,7 +6,7 @@
 //  Copyright © 2019 ThinkMac Software. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ThreeHourForecastViewModel {
   
@@ -28,7 +28,6 @@ class ThreeHourForecastViewModel {
    * Humidity expressed as a percentage
    */
   func humidty() -> String {
-
     return String(format: "%d%%", threeHourForecast.main.humidity)
   }
   
@@ -36,16 +35,25 @@ class ThreeHourForecastViewModel {
    * Short textual description of weather conditions
    */
   func weatherDescription() -> String {
-    
-    return threeHourForecast.weather.description
+    return threeHourForecast.weather[0].description
   }
   
   /**
    * Wind speed in meters per second
    */
   func windSpeed() -> String {
-    
     return String(format: "%.1f m/s", threeHourForecast.wind.speed)
+  }
+  
+  /**
+   * Returns combined info about wind speed and general direction
+   */
+  func windDescription() -> String {
+    return "Wind: \(windSpeed()), \(windDirection())"
+  }
+  
+  func windDirectionDegrees() -> Double {
+    return threeHourForecast.wind.deg
   }
   
   /**
@@ -56,11 +64,11 @@ class ThreeHourForecastViewModel {
     
     let degrees = Int(round(threeHourForecast.wind.deg))
     
-    // cardinal directions
-    if degrees == 0 { return "N" }
-    if degrees == 90 { return "E" }
-    if degrees == 180 { return "S" }
-    if degrees == 270 { return "W" }
+    // cardinal directions with fuzzy match to within +/- 5 degrees
+    if (0...5).contains(degrees) || (355...359).contains(degrees) { return "N" }
+    if (85...95).contains(degrees) { return "E" }
+    if (175...185).contains(degrees) { return "S" }
+    if (265...275).contains(degrees) { return "W" }
     
     // Intercardinal directions
     var directionString = ""
@@ -70,5 +78,38 @@ class ThreeHourForecastViewModel {
     if(degrees > 180 && degrees <= 359) { directionString.append("W") }
     
     return directionString
+  }
+  
+  func weatherIcon() -> UIImage? {
+    
+    return UIImage.init(named: threeHourForecast.weather[0].icon)
+  }
+  
+  func timeOfDay() -> String {
+    
+    let date = Date.init(timeIntervalSince1970: threeHourForecast.dt)
+    let formatter = DateFormatter()
+    formatter.locale = Locale.init(identifier: "en_GB")
+    formatter.setLocalizedDateFormatFromTemplate("HH:mm")
+    
+    return formatter.string(from: date)
+  }
+  
+  func dayOfMonth() -> String {
+    
+    let calendar = Calendar.init(identifier: Calendar.Identifier.gregorian)
+    let date = Date.init(timeIntervalSince1970: threeHourForecast.dt)
+    
+    return String(format: "%d", calendar.dateComponents([.day], from: date).day ?? 0)
+  }
+  
+  func monthName() -> String {
+    
+    let date = Date.init(timeIntervalSince1970: threeHourForecast.dt)
+    let formatter = DateFormatter()
+    formatter.locale = Locale.init(identifier: "en_GB")
+    formatter.setLocalizedDateFormatFromTemplate("MMM")
+    
+    return formatter.string(from: date)
   }
 }

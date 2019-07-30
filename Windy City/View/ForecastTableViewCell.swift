@@ -10,15 +10,43 @@ import UIKit
 
 class ForecastTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+  @IBOutlet var compassView : CompassView!
+  @IBOutlet var dayLabel : UILabel!
+  @IBOutlet var monthLabel : UILabel!
+  @IBOutlet var descriptionLabel : UILabel!
+  @IBOutlet var windLabel : UILabel!
+  @IBOutlet var timeLabel : UILabel!
+  @IBOutlet var iconImageView : UIImageView!
+  @IBOutlet var tempLabel : UILabel!
+  @IBOutlet var humidityLabel : UILabel!
+  
+  var viewModel : ThreeHourForecastViewModel? {
+    didSet {
+      updateUI()
     }
+  }
+  
+  func updateUI() {
+    
+    guard viewModel != nil else { return }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    self.dayLabel.text = viewModel?.dayOfMonth()
+    self.monthLabel.text = viewModel?.monthName()
+    self.timeLabel.text = viewModel?.timeOfDay()
+    self.tempLabel.text = viewModel?.temperature()
+    self.humidityLabel.text = viewModel?.humidty()
+    self.windLabel.text = viewModel?.windDescription()
+    self.iconImageView.image = viewModel?.weatherIcon()
+    self.descriptionLabel.text = viewModel?.weatherDescription()
+    self.compassView.degrees = viewModel?.windDirectionDegrees() ?? 0.0
+  }
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+  }
 
-        // Configure the view for the selected state
-    }
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+  }
     
 }

@@ -14,9 +14,9 @@ class CompassView: UIView {
   private var backgroundImageView = UIImageView.init()
   private var arrowImageView = UIImageView.init()
   
-  var degrees = 0 {
+  var degrees = 0.0 {
     didSet {
-      let radians = CGFloat(Double(degrees) * (.pi / 180))
+      let radians = CGFloat(degrees * (.pi / 180))
       arrowImageView.transform = CGAffineTransform(rotationAngle: radians)
     }
   }
@@ -35,6 +35,8 @@ class CompassView: UIView {
     
     self.addSubview(backgroundImageView)
     self.addSubview(arrowImageView)
+    
+    self.backgroundColor = .clear
     
     backgroundImageView.image = UIImage.init(named: "Compass")
     arrowImageView.image = UIImage.init(named: "Arrow")

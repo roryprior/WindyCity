@@ -53,7 +53,10 @@ class CitySearchViewController: UIViewController, UITextFieldDelegate {
           if(forecast != nil) {
             
             // present the city forecast
-            print("looks good!")
+            let storyboard = UIStoryboard.init(name: "Main", bundle: .main)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "Forecast") as! ForecastTableViewController
+            viewController.forecastViewModel = ForecastViewModel.init(forecast: forecast!)
+            self?.navigationController?.pushViewController(viewController, animated: true)
           }
         }
       }

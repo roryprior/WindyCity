@@ -16,6 +16,21 @@ class ForecastViewModel {
     self.forecast = forecast
   }
   
+  func cityName() -> String {
+    return forecast.city?.name ?? "Unknown"
+  }
   
+  func threeHourForecasts() -> Array<ThreeHourForecastViewModel> {
+    
+    guard self.forecast.list != nil else { return Array.init() }
+    
+    var returnArray = Array.init() as Array<ThreeHourForecastViewModel>
+    
+    returnArray = self.forecast.list!.map({
+      return ThreeHourForecastViewModel.init(threeHourForecast: $0)
+    })
+    
+    return returnArray
+  }
   
 }
