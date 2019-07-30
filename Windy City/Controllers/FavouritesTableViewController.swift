@@ -43,6 +43,8 @@ class FavouritesTableViewController: UITableViewController {
     
     let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
     let viewController = storyboard.instantiateViewController(withIdentifier: "AddCity") as! CitySearchViewController
+    
+    // if I had more time this would be nicer presented modally
     self.navigationController?.pushViewController(viewController, animated: true)
   }
   

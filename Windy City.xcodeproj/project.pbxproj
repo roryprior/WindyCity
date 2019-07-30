@@ -35,11 +35,19 @@
 		986C84B522F0BAA1000D6779 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */; };
 		986C84B622F0BAA1000D6779 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986C84B422F0BAA1000D6779 /* FavouriteTableViewCell.xib */; };
 		986C84B822F0BD61000D6779 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */; };
+		986C84BA22F0DB96000D6779 /* WeatherCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B922F0DB96000D6779 /* WeatherCheckerTests.swift */; };
+		986C84BC22F0E1B9000D6779 /* TestResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 986C84BB22F0E1B9000D6779 /* TestResponse.json */; };
+		986C84BD22F0E45A000D6779 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848422F03924000D6779 /* CompassView.swift */; };
+		986C84BE22F0E45E000D6779 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */; };
+		986C84BF22F0E468000D6779 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848222EFA5BD000D6779 /* CitySearchViewController.swift */; };
+		986C84C022F0E473000D6779 /* ThreeHourForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */; };
+		986C84C122F0E476000D6779 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */; };
+		986C84C622F0E8CC000D6779 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84C522F0E8CC000D6779 /* ForecastTests.swift */; };
+		986C84C822F0E90C000D6779 /* ForecastSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 986C84C722F0E90C000D6779 /* ForecastSample.json */; };
 		98ADE19F22EF282500D4A067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE19E22EF282500D4A067 /* AppDelegate.swift */; };
 		98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A222EF282500D4A067 /* Main.storyboard */; };
 		98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A522EF282600D4A067 /* Assets.xcassets */; };
 		98ADE1A922EF282600D4A067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ADE1A722EF282600D4A067 /* LaunchScreen.storyboard */; };
-		98ADE1B422EF282600D4A067 /* WindyCityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1B322EF282600D4A067 /* WindyCityTests.swift */; };
 		98ADE1C322EF28A600D4A067 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1C222EF28A600D4A067 /* APIRequest.swift */; };
 		98ADE1C422EF28A600D4A067 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1C222EF28A600D4A067 /* APIRequest.swift */; };
 		98ADE1C622EF28FD00D4A067 /* WeatherChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ADE1C522EF28FD00D4A067 /* WeatherChecker.swift */; };
@@ -106,14 +114,17 @@
 		986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		986C84B422F0BAA1000D6779 /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
 		986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		986C84B922F0DB96000D6779 /* WeatherCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCheckerTests.swift; sourceTree = "<group>"; };
+		986C84BB22F0E1B9000D6779 /* TestResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestResponse.json; sourceTree = "<group>"; };
+		986C84C522F0E8CC000D6779 /* ForecastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTests.swift; sourceTree = "<group>"; };
+		986C84C722F0E90C000D6779 /* ForecastSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ForecastSample.json; sourceTree = "<group>"; };
 		98ADE19B22EF282500D4A067 /* Windy City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Windy City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98ADE19E22EF282500D4A067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98ADE1A322EF282500D4A067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98ADE1A522EF282600D4A067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98ADE1A822EF282600D4A067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98ADE1AA22EF282600D4A067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98ADE1AF22EF282600D4A067 /* Windy CityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Windy CityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98ADE1B322EF282600D4A067 /* WindyCityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindyCityTests.swift; sourceTree = "<group>"; };
+		98ADE1AF22EF282600D4A067 /* WindyCityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindyCityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98ADE1B522EF282600D4A067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98ADE1C222EF28A600D4A067 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		98ADE1C522EF28FD00D4A067 /* WeatherChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherChecker.swift; sourceTree = "<group>"; };
@@ -199,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				98ADE19B22EF282500D4A067 /* Windy City.app */,
-				98ADE1AF22EF282600D4A067 /* Windy CityTests.xctest */,
+				98ADE1AF22EF282600D4A067 /* WindyCityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,8 +231,11 @@
 		98ADE1B222EF282600D4A067 /* WindyCityTests */ = {
 			isa = PBXGroup;
 			children = (
-				98ADE1B322EF282600D4A067 /* WindyCityTests.swift */,
+				986C84B922F0DB96000D6779 /* WeatherCheckerTests.swift */,
+				986C84C522F0E8CC000D6779 /* ForecastTests.swift */,
 				98ADE1B522EF282600D4A067 /* Info.plist */,
+				986C84BB22F0E1B9000D6779 /* TestResponse.json */,
+				986C84C722F0E90C000D6779 /* ForecastSample.json */,
 			);
 			path = WindyCityTests;
 			sourceTree = "<group>";
@@ -338,7 +352,7 @@
 			);
 			name = "Windy CityTests";
 			productName = "Windy CityTests";
-			productReference = 98ADE1AF22EF282600D4A067 /* Windy CityTests.xctest */;
+			productReference = 98ADE1AF22EF282600D4A067 /* WindyCityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -387,11 +401,13 @@
 				986C84A722F062A9000D6779 /* 04n.png in Resources */,
 				98ADE1D922EF4BD200D4A067 /* ForecastTableViewCell.xib in Resources */,
 				986C84A222F062A9000D6779 /* 01d.png in Resources */,
+				986C84C822F0E90C000D6779 /* ForecastSample.json in Resources */,
 				986C84AA22F062A9000D6779 /* 10d.png in Resources */,
 				986C84A922F062A9000D6779 /* 04d.png in Resources */,
 				98ADE1A922EF282600D4A067 /* LaunchScreen.storyboard in Resources */,
 				986C848C22F04264000D6779 /* Arrow@2x.png in Resources */,
 				986C84AF22F062A9000D6779 /* 02d.png in Resources */,
+				986C84BC22F0E1B9000D6779 /* TestResponse.json in Resources */,
 				986C84B122F062A9000D6779 /* 50d.png in Resources */,
 				986C84A122F062A9000D6779 /* 11n.png in Resources */,
 				98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */,
@@ -554,14 +570,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				98ADE1DD22EF4C5500D4A067 /* ForecastViewModel.swift in Sources */,
+				986C84C022F0E473000D6779 /* ThreeHourForecastViewModel.swift in Sources */,
 				98ADE1E622EF6EB600D4A067 /* FavouritesManager.swift in Sources */,
 				98ADE1D822EF4BD200D4A067 /* ForecastTableViewCell.swift in Sources */,
+				986C84C122F0E476000D6779 /* FavouriteViewModel.swift in Sources */,
 				98ADE1D422EF43AC00D4A067 /* ForecastTableViewController.swift in Sources */,
 				98ADE1E022EF4C8400D4A067 /* Forecast.swift in Sources */,
+				986C84BF22F0E468000D6779 /* CitySearchViewController.swift in Sources */,
 				98ADE1C422EF28A600D4A067 /* APIRequest.swift in Sources */,
 				98ADE1CE22EF432B00D4A067 /* FavouritesTableViewController.swift in Sources */,
 				98ADE1C722EF28FD00D4A067 /* WeatherChecker.swift in Sources */,
-				98ADE1B422EF282600D4A067 /* WindyCityTests.swift in Sources */,
+				986C84C622F0E8CC000D6779 /* ForecastTests.swift in Sources */,
+				986C84BD22F0E45A000D6779 /* CompassView.swift in Sources */,
+				986C84BE22F0E45E000D6779 /* FavouriteTableViewCell.swift in Sources */,
+				986C84BA22F0DB96000D6779 /* WeatherCheckerTests.swift in Sources */,
 				98ADE1CA22EF293D00D4A067 /* Favourite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +739,7 @@
 			baseConfigurationReference = 525C5FA8806FA002DA563AFC /* Pods-Windy City.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy City/Info.plist";
@@ -736,6 +759,7 @@
 			baseConfigurationReference = CBC965C85FEBCC4EB1594741 /* Pods-Windy City.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy City/Info.plist";
@@ -758,14 +782,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
-				INFOPLIST_FILE = "Windy CityTests/Info.plist";
+				INFOPLIST_FILE = WindyCityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-CityTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WindyCityTests;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windy City.app/Windy City";
@@ -780,14 +804,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
-				INFOPLIST_FILE = "Windy CityTests/Info.plist";
+				INFOPLIST_FILE = WindyCityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmac.Windy-CityTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WindyCityTests;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Windy City.app/Windy City";
