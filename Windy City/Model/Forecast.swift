@@ -21,11 +21,9 @@ struct Forecast : Codable {
   struct Main : Codable {
     var temp : Double
     var humidity: Int
-    var pressure: Double
   }
   
   struct Weather : Codable {
-    var id: Int
     var main: String
     var description : String
     var icon : String

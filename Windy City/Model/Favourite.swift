@@ -8,9 +8,10 @@
 
 import Foundation
 
-struct Favorite : Codable {
+struct Favourite : Codable {
   
   var cityName : String
-  var cityID : String
-  
+  var cityID : Int
+  var forecast : Forecast?
+
 }

@@ -52,6 +52,21 @@ class CitySearchViewController: UIViewController, UITextFieldDelegate {
           }
           if(forecast != nil) {
             
+            // add the city as a favourite
+            
+            if forecast?.city != nil {
+              let favouriteManager = FavouritesManager.shared()
+              let result = favouriteManager.add(Favourite.init(cityName: forecast!.city!.name, cityID: forecast!.city!.id, forecast: forecast))
+              
+              if result == false {
+                
+                let alertController = UIAlertController.init(title: "Can't Add Favourite", message: "Maximum number of favourite cities have been added.", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
+                self?.present(alertController, animated: true, completion: nil)
+                return
+              }
+            }
+              
             // present the city forecast
             let storyboard = UIStoryboard.init(name: "Main", bundle: .main)
             let viewController = storyboard.instantiateViewController(withIdentifier: "Forecast") as! ForecastTableViewController

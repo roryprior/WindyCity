@@ -20,6 +20,10 @@ class ForecastViewModel {
     return forecast.city?.name ?? "Unknown"
   }
   
+  func cityID() -> Int {
+    return forecast.city?.id ?? 0
+  }
+  
   func threeHourForecasts() -> Array<ThreeHourForecastViewModel> {
     
     guard self.forecast.list != nil else { return Array.init() }

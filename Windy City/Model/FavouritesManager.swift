@@ -10,24 +10,69 @@ import Foundation
 
 class FavouritesManager {
   
-  private var favorites : Array<Favorite>
+  private static let sharedInstance = FavouritesManager()
+  
+  let favouriteLimit = 20
+  private var favourites : Array<Favourite>
   
   private class func filePath() -> String {
     
     let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-    return "\(documentDirectory)/favorites.json"
+    return "\(documentDirectory)/favourites.json"
   }
   
+  var selectedFavourite = -1
+  
   init() {
+    self.favourites = Array.init()
+    load()
+  }
+  
+  class func shared() -> FavouritesManager {
+    return sharedInstance
+  }
+  
+  func swapAt(indexA: Int, indexB : Int) {
+    self.favourites.swapAt(indexA, indexB)
+    self.save()
+  }
+  
+  func itemAt(_ index: Int) -> Favourite {
+    return self.favourites[index]
+  }
+  
+  func count() -> Int {
+    return self.favourites.count
+  }
+  
+  func update(forecast: Forecast, atIndex : Int) {
+    self.favourites[atIndex].forecast = forecast
+    self.save()
+  }
+  
+  func add(_ item : Favourite) -> Bool {
     
-    self.favorites = Array.init()
-    
+    if self.favourites.count < favouriteLimit {
+      self.favourites.append(item)
+      return true
+    }
+    else {
+      return false
+    }
+  }
+  
+  func removeItemAt(_ index: Int) {
+    self.favourites.remove(at: index)
+    self.save()
+  }
+  
+  func load() {
     if FileManager.default.fileExists(atPath: FavouritesManager.filePath()) {
       
       do {
         let decoder = JSONDecoder()
         if let data = try? Data.init(contentsOf: URL.init(fileURLWithPath: FavouritesManager.filePath())) {
-          self.favorites = try decoder.decode(Array<Favorite>.self, from: data)
+          self.favourites = try decoder.decode(Array<Favourite>.self, from: data)
         }
         else {
           print("Unable to decode any saved favourites")
@@ -39,33 +84,10 @@ class FavouritesManager {
     }
   }
   
-  func swapAt(indexA: Int, indexB : Int) {
-    self.favorites.swapAt(indexA, indexB)
-    self.save()
-  }
-  
-  func itemAt(_ index: Int) -> Favorite {
-    return self.favorites[index]
-  }
-  
-  func count() -> Int {
-    return self.favorites.count
-  }
-  
-  func add(_ item : Favorite) {
-    self.favorites.append(item)
-    self.save()
-  }
-  
-  func removeItemAt(_ index: Int) {
-    self.favorites.remove(at: index)
-    self.save()
-  }
-  
-  private func save() {
+  func save() {
     do {
       let encoder = JSONEncoder()
-      if let encoded = try? encoder.encode(self.favorites) {
+      if let encoded = try? encoder.encode(self.favourites) {
         if let json = String(data: encoded, encoding: .utf8) {
           try json.write(toFile: FavouritesManager.filePath(), atomically: true, encoding: .utf8)
         }

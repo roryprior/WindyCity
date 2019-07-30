@@ -10,7 +10,7 @@ import UIKit
 
 class FavouritesTableViewController: UITableViewController {
 
-  private let favouritesManager = FavouritesManager.init()
+  private let favouritesManager = FavouritesManager.shared()
   private let reuseIdentifier = "FavouriteCell"
   
   private var addButton : UIBarButtonItem?
@@ -32,6 +32,7 @@ class FavouritesTableViewController: UITableViewController {
   override func viewWillAppear(_ animated: Bool) {
     
     self.navigationController?.setToolbarHidden(false, animated: true)
+    self.tableView.reloadData()
   }
   
   // MARK: - Actions
@@ -70,19 +71,27 @@ class FavouritesTableViewController: UITableViewController {
     if editingStyle == .delete {
       
       self.favouritesManager.removeItemAt(indexPath.row)
+      self.favouritesManager.save()
       tableView.deleteRows(at: [indexPath], with: .fade)
     }
   }
 
-
-  
   // Override to support rearranging the table view.
   override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
-    
-    
+    self.favouritesManager.swapAt(indexA: fromIndexPath.row, indexB: to.row)
+    self.favouritesManager.save()
   }
 
-  
-
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    let favourite = favouritesManager.itemAt(indexPath.row)
+    if let forecast = favourite.forecast {
+      favouritesManager.selectedFavourite = indexPath.row
+      let storyboard = UIStoryboard.init(name: "Main", bundle: .main)
+      let viewController = storyboard.instantiateViewController(withIdentifier: "Forecast") as! ForecastTableViewController
+      viewController.forecastViewModel = ForecastViewModel.init(forecast: forecast)
+      self.navigationController?.pushViewController(viewController, animated: true)
+    }
+  }
 }
