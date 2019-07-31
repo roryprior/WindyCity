@@ -12,17 +12,26 @@ class CitySearchViewController: UIViewController, UITextFieldDelegate {
 
   @IBOutlet var textField : UITextField!
   
+  // MARK: - View Lifecycle
+  
   override func viewDidLoad() {
+    
     super.viewDidLoad()
-
     self.title = "City Search"
   }
   
   override func viewWillAppear(_ animated: Bool) {
     
+    super.viewWillAppear(animated)
     self.navigationController?.setToolbarHidden(true, animated: true)
     self.textField.becomeFirstResponder()
     self.textField.selectAll(nil)
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    
+    super.viewWillDisappear(animated)
+    self.textField.resignFirstResponder()
   }
   
   // MARK: - UITextField Delegate
@@ -78,15 +87,4 @@ class CitySearchViewController: UIViewController, UITextFieldDelegate {
     }
     return true
   }
-  
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -11,10 +11,9 @@ import UIKit
 class ForecastTableViewController: UITableViewController {
 
   private let forecastCellIdentifier = "forecastCellIdentifier"
-  
   private var refreshButton : UIBarButtonItem?
-  
   private var cityID = -1
+  
   var forecastViewModel : ForecastViewModel? {
     didSet {
       if forecastViewModel != nil {
@@ -26,9 +25,12 @@ class ForecastTableViewController: UITableViewController {
     }
   }
   
+  // MARK: - View Lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.tableView.allowsSelection = false
     self.tableView.register(UINib.init(nibName: "ForecastTableViewCell", bundle: .main), forCellReuseIdentifier: forecastCellIdentifier)
     self.tableView.rowHeight = 115
     
@@ -54,6 +56,7 @@ class ForecastTableViewController: UITableViewController {
     let weatherChecker = WeatherChecker.init()
     weatherChecker.fetchForecast(cityID: cityID) { (forecast, error) in
       
+      // always call UI updates on the main thread
       DispatchQueue.main.async { [weak self] in
         
         if error != nil {

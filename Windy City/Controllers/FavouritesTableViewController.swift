@@ -15,6 +15,8 @@ class FavouritesTableViewController: UITableViewController {
   
   private var addButton : UIBarButtonItem?
   
+  // MARK: - View lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
  
@@ -33,6 +35,7 @@ class FavouritesTableViewController: UITableViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     
+    super.viewWillAppear(animated)
     self.navigationController?.setToolbarHidden(false, animated: true)
     self.tableView.reloadData()
   }

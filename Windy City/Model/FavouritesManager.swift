@@ -54,6 +54,7 @@ class FavouritesManager {
     
     if self.favourites.count < favouriteLimit {
       self.favourites.append(item)
+      self.save()
       return true
     }
     else {

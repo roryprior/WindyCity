@@ -11,6 +11,7 @@ import Foundation
 struct Favourite : Codable {
   
   var cityName : String
+  /** OpenWeatherMap city ID number */
   var cityID : Int
   var forecast : Forecast?
 

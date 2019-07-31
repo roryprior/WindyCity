@@ -70,7 +70,5 @@ class FavouriteViewModel {
     else {
       return nil
     }
-
   }
-  
 }
