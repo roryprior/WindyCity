@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9811144822F6341A004AFECB /* FavouritesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811144722F6341A004AFECB /* FavouritesManagerTests.swift */; };
 		986C848122EF9168000D6779 /* ThreeHourForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */; };
 		986C848322EFA5BD000D6779 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848222EFA5BD000D6779 /* CitySearchViewController.swift */; };
 		986C848522F03924000D6779 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848422F03924000D6779 /* CompassView.swift */; };
@@ -85,6 +86,7 @@
 		01060D2E09A7D6FA8EFCA93E /* Pods-Windy CityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windy CityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windy CityTests/Pods-Windy CityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		198E2DCE4789CE96BEAD5B3A /* Pods-Windy CityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windy CityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Windy CityTests/Pods-Windy CityTests.release.xcconfig"; sourceTree = "<group>"; };
 		525C5FA8806FA002DA563AFC /* Pods-Windy City.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Windy City.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Windy City/Pods-Windy City.debug.xcconfig"; sourceTree = "<group>"; };
+		9811144722F6341A004AFECB /* FavouritesManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManagerTests.swift; sourceTree = "<group>"; };
 		986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeHourForecastViewModel.swift; sourceTree = "<group>"; };
 		986C848222EFA5BD000D6779 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
 		986C848422F03924000D6779 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			children = (
 				986C84B922F0DB96000D6779 /* WeatherCheckerTests.swift */,
 				986C84C522F0E8CC000D6779 /* ForecastTests.swift */,
+				9811144722F6341A004AFECB /* FavouritesManagerTests.swift */,
 				98ADE1B522EF282600D4A067 /* Info.plist */,
 				986C84C722F0E90C000D6779 /* ForecastSample.json */,
 			);
@@ -577,6 +580,7 @@
 				98ADE1CE22EF432B00D4A067 /* FavouritesTableViewController.swift in Sources */,
 				98ADE1C722EF28FD00D4A067 /* WeatherChecker.swift in Sources */,
 				986C84C622F0E8CC000D6779 /* ForecastTests.swift in Sources */,
+				9811144822F6341A004AFECB /* FavouritesManagerTests.swift in Sources */,
 				986C84BD22F0E45A000D6779 /* CompassView.swift in Sources */,
 				986C84BE22F0E45E000D6779 /* FavouriteTableViewCell.swift in Sources */,
 				986C84BA22F0DB96000D6779 /* WeatherCheckerTests.swift in Sources */,

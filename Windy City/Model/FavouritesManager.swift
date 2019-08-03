@@ -15,7 +15,7 @@ class FavouritesManager {
   let favouriteLimit = 20
   private var favourites : Array<Favourite>
   
-  private class func filePath() -> String {
+  class func filePath() -> String {
     
     let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
     return "\(documentDirectory)/favourites.json"
@@ -98,4 +98,5 @@ class FavouritesManager {
       print("Error saving favourites: \(error.localizedDescription)")
     }
   }
+  
 }
