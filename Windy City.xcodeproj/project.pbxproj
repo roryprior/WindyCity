@@ -12,10 +12,6 @@
 		986C848122EF9168000D6779 /* ThreeHourForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */; };
 		986C848322EFA5BD000D6779 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848222EFA5BD000D6779 /* CitySearchViewController.swift */; };
 		986C848522F03924000D6779 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C848422F03924000D6779 /* CompassView.swift */; };
-		986C848822F03FE7000D6779 /* Compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848622F03FE6000D6779 /* Compass@2x.png */; };
-		986C848922F03FE7000D6779 /* Compass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848722F03FE6000D6779 /* Compass@3x.png */; };
-		986C848C22F04264000D6779 /* Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848A22F04264000D6779 /* Arrow@2x.png */; };
-		986C848D22F04264000D6779 /* Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 986C848B22F04264000D6779 /* Arrow@3x.png */; };
 		986C84B522F0BAA1000D6779 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */; };
 		986C84B622F0BAA1000D6779 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986C84B422F0BAA1000D6779 /* FavouriteTableViewCell.xib */; };
 		986C84B822F0BD61000D6779 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */; };
@@ -74,10 +70,6 @@
 		986C848022EF9168000D6779 /* ThreeHourForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeHourForecastViewModel.swift; sourceTree = "<group>"; };
 		986C848222EFA5BD000D6779 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
 		986C848422F03924000D6779 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
-		986C848622F03FE6000D6779 /* Compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compass@2x.png"; sourceTree = "<group>"; };
-		986C848722F03FE6000D6779 /* Compass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compass@3x.png"; sourceTree = "<group>"; };
-		986C848A22F04264000D6779 /* Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@2x.png"; sourceTree = "<group>"; };
-		986C848B22F04264000D6779 /* Arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@3x.png"; sourceTree = "<group>"; };
 		986C84B322F0BAA1000D6779 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		986C84B422F0BAA1000D6779 /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
 		986C84B722F0BD61000D6779 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
@@ -232,10 +224,6 @@
 				98ADE1A222EF282500D4A067 /* Main.storyboard */,
 				98ADE1A722EF282600D4A067 /* LaunchScreen.storyboard */,
 				98ADE1A522EF282600D4A067 /* Assets.xcassets */,
-				986C848622F03FE6000D6779 /* Compass@2x.png */,
-				986C848722F03FE6000D6779 /* Compass@3x.png */,
-				986C848A22F04264000D6779 /* Arrow@2x.png */,
-				986C848B22F04264000D6779 /* Arrow@3x.png */,
 				982D97F822F8DF5E00D87326 /* WeatherIcons.xcassets */,
 			);
 			path = Assets;
@@ -342,14 +330,10 @@
 				98ADE1D922EF4BD200D4A067 /* ForecastTableViewCell.xib in Resources */,
 				986C84C822F0E90C000D6779 /* ForecastSample.json in Resources */,
 				98ADE1A922EF282600D4A067 /* LaunchScreen.storyboard in Resources */,
-				986C848C22F04264000D6779 /* Arrow@2x.png in Resources */,
 				98ADE1A622EF282600D4A067 /* Assets.xcassets in Resources */,
 				98ADE1A422EF282500D4A067 /* Main.storyboard in Resources */,
-				986C848D22F04264000D6779 /* Arrow@3x.png in Resources */,
 				986C84B622F0BAA1000D6779 /* FavouriteTableViewCell.xib in Resources */,
 				982D97F922F8DF5E00D87326 /* WeatherIcons.xcassets in Resources */,
-				986C848922F03FE7000D6779 /* Compass@3x.png in Resources */,
-				986C848822F03FE7000D6779 /* Compass@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,7 +647,6 @@
 			baseConfigurationReference = 525C5FA8806FA002DA563AFC /* Pods-Windy City.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy City/Info.plist";
@@ -683,7 +666,6 @@
 			baseConfigurationReference = CBC965C85FEBCC4EB1594741 /* Pods-Windy City.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHBLM3V4YF;
 				INFOPLIST_FILE = "Windy City/Info.plist";
