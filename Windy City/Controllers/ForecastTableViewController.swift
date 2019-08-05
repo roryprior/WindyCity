@@ -21,7 +21,13 @@ class ForecastTableViewController: UITableViewController {
         self.cityID = forecastViewModel!.cityID()
       }
       self.tableView.reloadData()
-      self.tableView.scrollToRow(at: IndexPath.init(row: 0, section: 0), at: .top, animated: true)
+      // turns out the we will crash if we try and scroll to row 0 when there are no rows
+      // so we'll check to make sure we have at least 1 row before we call it.
+      if let threeHourForeacsts = self.forecastViewModel?.threeHourForecasts() {
+        if(threeHourForeacsts.count > 0) {
+          self.tableView.scrollToRow(at: IndexPath.init(row: 0, section: 0), at: .top, animated: true)
+        }
+      }
     }
   }
   

@@ -35,6 +35,11 @@ class ThreeHourForecastViewModel {
    * Short textual description of weather conditions
    */
   func weatherDescription() -> String {
+    
+    guard threeHourForecast.weather.count > 0 else {
+      return "No weather description"
+    }
+    
     return threeHourForecast.weather[0].description
   }
   
@@ -75,13 +80,16 @@ class ThreeHourForecastViewModel {
     if degrees > 270 || degrees < 90 { directionString = "N" }
     else { directionString = "S" }
     if(degrees > 0 && degrees < 180) { directionString.append("E") }
-    if(degrees > 180 && degrees <= 359) { directionString.append("W") }
+    if(degrees > 180 && degrees < 360) { directionString.append("W") }
     
     return directionString
   }
   
   func weatherIcon() -> UIImage? {
     
+    guard threeHourForecast.weather.count > 0 else {
+      return UIImage.init(named: "01d") // ideally we'd have a 'no forecast' icon but for not lets return the sunny icon
+    }
     return UIImage.init(named: threeHourForecast.weather[0].icon)
   }
   

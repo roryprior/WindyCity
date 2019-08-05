@@ -21,18 +21,20 @@ class ForecastViewModel {
   }
   
   func cityID() -> Int {
-    return forecast.city?.id ?? 0
+    return forecast.city?.id ?? -1
   }
   
   func threeHourForecasts() -> Array<ThreeHourForecastViewModel> {
     
-    guard self.forecast.list != nil else { return Array.init() }
+    guard self.forecast.list != nil else { return Array.init() as Array<ThreeHourForecastViewModel> }
     
     var returnArray = Array.init() as Array<ThreeHourForecastViewModel>
     
     returnArray = self.forecast.list!.map({
       return ThreeHourForecastViewModel.init(threeHourForecast: $0)
     })
+
+    print("\(returnArray)")
     
     return returnArray
   }

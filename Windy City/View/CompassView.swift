@@ -42,6 +42,7 @@ class CompassView: UIView {
   
   func setup() {
     
+    self.degrees = -1 // arrow hidden by default
     self.addSubview(backgroundImageView)
     self.addSubview(arrowImageView)
     
@@ -56,6 +57,4 @@ class CompassView: UIView {
     backgroundImageView.autoPinEdgesToSuperviewEdges()
     arrowImageView.autoPinEdgesToSuperviewEdges()
   }
-  
-
 }
