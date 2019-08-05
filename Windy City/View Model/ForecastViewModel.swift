@@ -34,8 +34,6 @@ class ForecastViewModel {
       return ThreeHourForecastViewModel.init(threeHourForecast: $0)
     })
 
-    print("\(returnArray)")
-    
     return returnArray
   }
   
