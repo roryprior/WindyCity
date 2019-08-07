@@ -1,6 +1,6 @@
 # WindyCity
 
-This is a simple app to check the wind and other weather conditions in any city or location around the world. It uses the OpenWeatherMap API and will require an API key to do anything useful.
+This is a simple app to check the wind and other weather conditions in any city or location around the world. It uses the OpenWeatherMap API and will require an API key to do anything useful. This needs to be set in the WeatherChecker class under Model.
 
 ## Demonstrates:
 
