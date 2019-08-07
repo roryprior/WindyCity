@@ -10,7 +10,7 @@ import UIKit
 
 class WeatherChecker: APIRequest {
 
-  private let appID = "3e2161379fa2f3e61026dd8d38b18041" // account key for accessing the weather API
+  private let appID = "YOUR API KEY HERE!" // account key for accessing the weather API
   private let units = "metric" // this could become a user facing preference
   
   /**
